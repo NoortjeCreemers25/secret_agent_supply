@@ -1,0 +1,232 @@
+html{
+  font-size: 18px;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.background-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+}
+
+.logo{
+  background: black;
+  color: white;
+  display: inline-flex;
+  padding: 0.66rem 0;
+  align-items: center;
+  width: 960px;
+}
+
+.logo img{
+  height: 1.5rem;
+}
+
+.logo h1{
+  padding-left: 1rem;
+  font-size: 1rem;
+}
+
+.background-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 25rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-banner{
+  width: 960px;
+}
+
+header h1, header h2{
+  text-transform: uppercase;
+}
+
+.main-banner h2, .main-banner h1{
+  border: 1px solid black;
+  padding-left: 3rem;
+  width: 20rem;
+  height: auto 0;
+  background: black;
+  color: white;
+  font-weight: bold;
+}
+
+.main-banner h2{
+  margin-top: 9rem;
+  padding-top: 2rem;
+  padding-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.main-banner h1{
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.background-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: firebrick;
+  width: 100%;
+}
+
+nav{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-item{
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.product-grid{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem 0 0 0;
+}
+
+.product{
+  width: 30%;
+  height: auto 0;
+}
+
+.product img{
+  border: 4px solid black;
+  padding: 2rem;
+  height: 9rem;
+  max-width: 9rem;
+}
+
+.product span{
+  padding: 0.5rem 2rem;
+  width: 9rem;
+  background-color: black;
+  color: white;
+  border: 4px solid black;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.location-hours{
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location, .hours{
+  width: 35%;
+}
+
+.location h1, .hours h1{
+  padding: 1rem 2rem;
+  width: 35%;
+  background-color: black;
+  color: white;
+}
+
+.location p, .hours p{
+  margin-bottom: 4rem;
+}
+
+.background-footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: black;
+  width: 100%;
+  height: 5rem;
+}
+
+footer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer p{
+  color: white;
+  width: 960px;
+}
+
+@media only screen and (min-width: 1024px){
+  #desktop{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 471px) and (max-width: 1023px){
+  #tablet{
+    display: none;
+  }
+
+  nav{
+    justify-content: center;
+  }
+
+  .product{
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .background-banner{
+    height: 25rem;
+  }
+
+  .main-banner h2, .main-banner h1{
+    padding-left: 2rem;
+  }
+
+  .main-banner h2{
+    margin-top: 10rem;
+    padding-top: 1rem;
+  }
+
+  #tablet, #phone{
+    display: none;
+  }
+
+  .product, .location, .hours, .location h1, .hours h1{
+    width: 90%;
+  }
+
+  nav, .product-grid{
+    justify-content: center;
+  }
+}
